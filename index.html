@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroClima Huarmaca</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <style>
+    .seccion { padding: 4rem 1rem; }
+    .fade-in { animation: fadeIn 1.2s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 fade-in">
+  <header class="bg-white shadow p-4 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-green-600">🌱 AgroClima Huarmaca</h1>
+      <p class="text-sm text-gray-600">El clima a tu favor, la cosecha en tus manos</p>
+    </div>
+  </header>
+
+  <section class="seccion bg-gradient-to-r from-green-400 to-blue-500 text-white text-center">
+    <h2 class="text-4xl font-bold mb-4">Bienvenido agricultor de Huarmaca</h2>
+    <p class="text-lg">Toda la información agrícola y climática en un solo lugar</p>
+  </section>
+
+  <section class="seccion bg-white text-center">
+    <h3 class="text-2xl font-bold mb-6 text-green-700">🌤️ Clima por Caserío</h3>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <div class="bg-blue-100 p-4 rounded">Huarmaca Centro: 18°C, 70% humedad</div>
+      <div class="bg-green-100 p-4 rounded">Tunal: 15°C, 78% humedad</div>
+      <div class="bg-yellow-100 p-4 rounded">Laquipampa: 17°C, 74% humedad</div>
+      <div class="bg-purple-100 p-4 rounded">Chamelque: 16°C, 69% humedad</div>
+    </div>
+  </section>
+
+  <section class="seccion bg-gray-100 text-center">
+    <h3 class="text-2xl font-bold text-blue-800 mb-6">📅 Calendario Agrícola</h3>
+    <p class="mb-4">Siembra: Arveja, Oca, Habas | Cosecha: Trigo, Cebada, Quinua</p>
+    <p class="text-sm text-gray-600">Cuidados del mes: Control de heladas y compostaje</p>
+  </section>
+
+  <section class="seccion bg-white text-center">
+    <h3 class="text-2xl font-bold text-green-700 mb-6">📏 Aforo Agrícola</h3>
+    <form class="max-w-xl mx-auto text-left bg-green-50 p-6 rounded shadow space-y-4">
+      <label>Cultivo: <input class="w-full p-2 border rounded" placeholder="Ej. Papa"></label>
+      <label>Parcela: <input class="w-full p-2 border rounded" placeholder="Ej. Norte 1"></label>
+      <label>Fecha: <input type="date" class="w-full p-2 border rounded"/></label>
+      <label>Rendimiento (kg/ha): <input type="number" class="w-full p-2 border rounded"/></label>
+      <button type="submit" class="w-full bg-green-600 text-white py-2 rounded">Registrar</button>
+    </form>
+  </section>
+
+  <section class="seccion bg-gray-100 text-center">
+    <h3 class="text-2xl font-bold text-yellow-700 mb-6">💰 Precios de Mercado</h3>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white p-4 rounded shadow">Papa: S/ 2.50</div>
+      <div class="bg-white p-4 rounded shadow">Maíz: S/ 3.80</div>
+      <div class="bg-white p-4 rounded shadow">Quinua: S/ 12.50</div>
+    </div>
+  </section>
+
+  <section class="seccion bg-white text-center">
+    <h3 class="text-2xl font-bold text-red-600 mb-4">🐛 Guía de Plagas</h3>
+    <p class="text-gray-600">Ejemplos: Gusano de la papa, Tizón tardío, Pulgón verde</p>
+  </section>
+
+  <section class="seccion bg-gray-100 text-center">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-4">📚 Zona Educativa</h3>
+    <ul class="max-w-md mx-auto text-left list-disc list-inside text-gray-700">
+      <li>¿Qué es el clima?</li>
+      <li>Cómo interpretar la humedad</li>
+      <li>Leer el pronóstico</li>
+    </ul>
+  </section>
+
+  <section class="seccion bg-white text-center">
+    <h3 class="text-2xl font-bold text-pink-600 mb-4">💬 Foro Comunitario</h3>
+    <p class="text-gray-600">Comparte tus dudas, consejos o experiencias con otros agricultores</p>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p class="text-sm">© 2025 AgroClima Huarmaca. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
